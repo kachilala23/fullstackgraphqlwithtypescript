@@ -22,7 +22,20 @@ npm i -D @types/node @types/express
 We need to start changing any js file extension to ts and tell nodemon in package.json we will be running ts file 
 instaed of js. We do this by changing this line of code "start": "nodemon src/index.ts"
 
+Because the browser does not understand typescript we need to convert it to javascript. We do this by 
+adding the build command in the package.json file.
+"build": "tsc -p ./"
 
+We need to add eslint extention to make our code more stable.
+
+we run the command 
+
+npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+eslint for more stable code. typescript eslint-parser helps us parse typescript with linting
+typescript-eslint/eslint-plugin is a plugin that helps typescript eslint do it's job efficiently
+
+npm i -D @types/body-parser
 
 
 
