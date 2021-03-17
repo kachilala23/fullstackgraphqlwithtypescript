@@ -35,7 +35,30 @@ npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 eslint for more stable code. typescript eslint-parser helps us parse typescript with linting
 typescript-eslint/eslint-plugin is a plugin that helps typescript eslint do it's job efficiently
 
-npm i -D @types/body-parser
+npm i -D @types/body-parser.
+
+M3
+
+Next we need to run the command 
+npm i apollo-server-express
+npm i graphql
+npm i -D @types/graphql
+
+Next we create graphql.ts file and write a barebone grapgql schema as well as update index.ts to reference the newly
+created graphql.ts file.
+
+With the following set up we can navigate to http://localhost:9000/api
+
+At this url we will see a graphical user interface through which we can interact with our api.
+The IDE is built by Prisma
+
+
+
+
+
+
+
+
 
 
 
