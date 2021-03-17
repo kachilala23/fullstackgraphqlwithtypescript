@@ -1,0 +1,28 @@
+Created a basic node application. 
+npm i express
+npm i nodemon -D // the D meaning we want it as a dev dependency
+
+configured nodemon in package.json to run in the format nodemon src/
+
+Converting the node project started in vanilla javascript to typescript.
+
+npm i typescript ts-node -D 
+
+typescript will convert our core ts code to core js code. ts-node is a utility
+library that will help us run typescript program directly from the terminal 
+
+Next we create a tsconfig.json file 
+
+https://github.com/DefinitelyTyped/DefinitelyTyped
+
+To make express and node libraries make use of typescript, we install the following packages as dev dependencies.
+
+npm i -D @types/node @types/express
+
+We need to start changing any js file extension to ts and tell nodemon in package.json we will be running ts file 
+instaed of js. We do this by changing this line of code "start": "nodemon src/index.ts"
+
+
+
+
+
